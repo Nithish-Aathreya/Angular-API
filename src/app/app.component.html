@@ -1,0 +1,22 @@
+
+<h1> {{title}} </h1>
+
+
+<li *ngFor="let det of lstdetails"  >
+{{det.name}}
+</li>
+
+<form #UsersForm ="ngForm" (ngSubmit)="getUsersData(UsersForm.value)" >
+        id<input type="number" ngModel name="userid" placeholder="Enter id"  >
+        <br> 
+        <br>
+        name<input type="text" ngModel name="username" placeholder="Enter Name" >
+        <br>
+        <br>
+       email <input type="text" ngModel name="usermail" placeholder="Enter mail">
+       <br>
+       <button>ADD</button>
+
+
+</form>
+
